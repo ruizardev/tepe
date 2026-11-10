@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad · Tepé</title>
+<link rel="stylesheet" href="estilo.css">
+<link rel="icon" href="icono.png">
+</head>
+<body>
+<main>
+<header><img src="icono.png" alt=""><a href="./">Tepé</a></header>
+
+<h1>Política de privacidad</h1>
+<p class="fecha">Última revisión: [FECHA DE PUBLICACIÓN]</p>
+
+<p>Responsable: [NOMBRE Y APELLIDOS]. Contacto: <a href="mailto:ruizardev@gmail.com">ruizardev@gmail.com</a>.</p>
+<p>Tepé es una app no oficial de transporte público. No está vinculada a ningún operador ni administración.</p>
+
+<div class="caja">
+<strong>Lo esencial</strong>
+<ul>
+<li>No hay cuentas propias ni informes de fallos. Sí hay estadísticas de uso anónimas: solo cuántas veces se usa cada cosa, sin saber quién, y se pueden apagar en Ajustes.</li>
+<li>Lo que guardas se queda en tu móvil, salvo que tú o Android activéis una copia en tu cuenta de Google.</li>
+<li>Tu ubicación se usa solo dentro del móvil. La app no la envía en ninguna petición.</li>
+<li>Si conectas el calendario (opcional), la app lee en el móvil las citas con dirección para decirte cuándo salir. Solo la dirección de cada cita se busca en Photon, como si la escribieras tú; el título, la hora y lo demás no salen del móvil.</li>
+<li>El único servidor de la app sirve las llegadas de los autobuses de EMT y, para no cargar a cada operador, los tiempos de Metro y Metro Ligero, los avisos y el tiempo real de Cercanías. Recibe el número de la parada o qué dato pides y un código al azar de tu instalación, y olvida ese código a los dos minutos.</li>
+<li>Para funcionar, la app pide datos a servicios de terceros. Cada uno ve tu dirección IP y lo que indica la tabla de abajo.</li>
+</ul>
+</div>
+
+<h2>Qué se guarda en tu móvil</h2>
+<ul>
+<li>Paradas, líneas y estaciones de bici favoritas, con el nombre que les pongas.</li>
+<li>Las direcciones o paradas que elijas como Casa y Trabajo, y tus otros sitios (por ejemplo, «Gimnasio»).</li>
+<li>Paradas recientes y las últimas búsquedas de Rutas (origen y destino; si saliste de tu ubicación, no se guarda dónde estabas).</li>
+<li>Tus búsquedas de Rutas de las últimas cuatro semanas, con día y hora, para proponerte la ruta de costumbre. No salen del móvil.</li>
+<li>Tus rutas: nombre, origen y destino (o parada y líneas), cómo ir, días, hora y cuándo avisarte.</li>
+<li>Con «Avísame para volver» activo, el punto donde estabas al activarlo, hasta que termina.</li>
+<li>Si conectas el calendario, qué calendarios no quieres que se miren.</li>
+<li>Zona y fecha de caducidad del abono, si las apuntas.</li>
+<li>Ajustes: ciudad, tema, filtros del mapa, última zona vista en el mapa, avisos ya leídos y evitar estaciones sin ascensor.</li>
+<li>Un código de instalación al azar, que no dice nada de ti ni de tu móvil. Ver «El servidor de la app».</li>
+<li>Si inicias sesión con Google: el correo de esa cuenta.</li>
+<li>Horarios y previsión de lluvia, que no son datos tuyos.</li>
+</ul>
+<p>Al desinstalar la app, Android borra todo esto del móvil.</p>
+
+<h2>El servidor de la app</h2>
+<p>Las llegadas en directo de los autobuses de EMT Madrid no se piden a EMT desde tu móvil, sino a través de un servidor de la app. Así la cuenta de la app en EMT no va dentro de la app, y si muchas personas miran la misma parada, a EMT le llega una sola consulta. Lo mismo con los tiempos de Metro y Metro Ligero, los avisos de EMT, del Consorcio y de Renfe y el tiempo real de Cercanías: el servidor guarda unos segundos o minutos la última respuesta y se la da a todos.</p>
+<ul>
+<li><strong>Qué recibe:</strong> el número de la parada o qué dato pides (por ejemplo, los avisos de Metro), tu dirección IP y el código de instalación.</li>
+<li><strong>El código de instalación</strong> se crea al azar la primera vez que abres la app. No sale de tu cuenta, de tu móvil ni de tu número, y no se usa para nada más que para contar cuántas consultas hace cada instalación por minuto, para que nadie pueda saturar el servicio. Si la app no lo envía, se cuenta por dirección IP.</li>
+<li><strong>Qué guarda:</strong> la última respuesta de cada parada y de cada fuente, que no tiene datos tuyos; y, para que nadie abuse, cuántas consultas lleva en el minuto en curso cada instalación (por su código al azar) y cada conexión (por un resumen cifrado de su IP, del que no se puede sacar la IP). Esas filas se borran a los dos minutos.</li>
+<li><strong>Registros técnicos:</strong> el proveedor del servidor guarda, como todo servidor, la hora, la dirección pedida y la IP de cada petición durante un tiempo limitado según su plan: un día en el gratuito y siete en el de pago.</li>
+<li><strong>Quién lo aloja:</strong> Supabase, como encargado del tratamiento, en servidores de la Unión Europea.</li>
+<li><strong>Por qué se puede:</strong> por interés legítimo, para dar el servicio que pides y protegerlo de abusos.</li>
+</ul>
+<p>Ni el número de parada ni el código permiten saber quién eres. El responsable no los cruza con nada.</p>
+
+<h2>Qué sale del móvil y hacia quién</h2>
+<p>Todas las conexiones van cifradas (HTTPS). En todas, el servicio recibe además tu dirección IP y el nombre de la app. Salvo el servidor de la app, ninguna lleva un identificador tuyo ni de tu móvil.</p>
+<div class="tabla">
+<table>
+<tr><th>Servicio</th><th>Cuándo</th><th>Qué recibe, además de la IP</th></tr>
+<tr><td>Servidor de la app (Supabase)</td><td>Al consultar una parada de EMT, Metro o Metro Ligero, también en Inicio y en el widget, al ver avisos o Cercanías, o al ver en el mapa un recorrido con autobuses o trenes en directo</td><td>El número de la parada o qué dato pides, y el código de instalación</td></tr>
+<tr><td>Photon (photon.komoot.io), buscador sobre OpenStreetMap</td><td>Al escribir al menos 3 letras en la búsqueda de Rutas, al abrir en la app un enlace <code>geo:</code> con un texto o, con el calendario conectado, para situar la dirección de una cita</td><td><strong>El texto que escribes</strong>, también si es tu dirección, y un recuadro fijo de la ciudad</td></tr>
+<tr><td>OpenFreeMap (tiles.openfreemap.org)</td><td>Al ver el mapa, y al ver una ruta, para dibujar por qué calles se anda</td><td>Las cuadrículas de la zona que estás mirando o por la que pasa la ruta. Si es donde estás, eso indica más o menos dónde. El camino se calcula en el móvil</td></tr>
+<tr><td>Consorcio Regional de Transportes de Madrid (crtm.es)</td><td>Al consultar una parada de Metro o Metro Ligero, ver avisos o abrir planos</td><td>El código de la parada o el tipo de transporte</td></tr>
+<tr><td>Renfe (gtfsrt.renfe.com)</td><td>Al consultar Cercanías, ver avisos o ver el mapa</td><td>Nada más: se descarga el dato de toda la red</td></tr>
+<tr><td>EMT Madrid (servicios.emtmadrid.es)</td><td>Al comprobar avisos</td><td>Nada más</td></tr>
+<tr><td>citybik.es</td><td>Al abrir el mapa, buscar una ruta o ver las bicis</td><td>Nada más: se descarga toda la red</td></tr>
+<tr><td>MET Norway (api.met.no)</td><td>Al buscar una ruta, como mucho cada 15 minutos</td><td>Nada más: un punto fijo de la ciudad, nunca tu ubicación</td></tr>
+<tr><td>ArcGIS (arcgis.com), donde el Consorcio publica los horarios</td><td>La primera vez y cada semana con Wi-Fi</td><td>Nada más</td></tr>
+<tr><td>Google (googleapis.com)</td><td>Solo si usas «Continuar con Google»</td><td>Ver «Copias en tu cuenta de Google»</td></tr>
+</table>
+</div>
+<p>Al Consorcio, a Renfe y al RSS de EMT la app les pregunta directamente solo si el servidor de la app no responde.</p>
+<p>Si pones el widget en la pantalla de inicio, consulta tus paradas favoritas mientras la pantalla está encendida, como si las abrieras. Si guardas una ruta en «Tus rutas», durante su franja consulta en segundo plano las llegadas de sus paradas y los avisos de sus líneas.</p>
+<p>No controlamos cuánto tiempo guardan los servicios de terceros sus registros ni dónde lo hacen. Cada uno tiene sus propias condiciones. Si prefieres que nadie reciba una dirección, elige una parada en vez de escribirla.</p>
+
+<h3>Al compartir y al abrir otras apps</h3>
+<p>Solo si pulsas el botón correspondiente:</p>
+<ul>
+<li><strong>Compartir</strong> una parada, una ruta o tu hora de llegada abre el menú de Android, y el texto va a la app que elijas.</li>
+<li><strong>Uber</strong> recibe las coordenadas y el nombre del destino y, como recogida, la parada de origen o «mi ubicación», que resuelve la propia Uber.</li>
+<li><strong>Cabify y Freenow</strong> se abren sin datos.</li>
+<li><strong>X</strong> abre la cuenta del operador que elijas.</li>
+<li><strong>Google Play y la app del Consorcio</strong> se abren sin datos tuyos.</li>
+</ul>
+<p>Desde ese momento se aplican las condiciones de cada una. La app comprueba en el móvil si esas apps están instaladas, sin enviar el resultado a nadie.</p>
+
+<h2>Ubicación</h2>
+<p>La app pide permiso de ubicación aproximada y precisa, y la lee con la app abierta, una vez al pulsar «Avísame para volver» o, si pulsas «Avísame al bajar», durante ese viaje con una notificación fija a la vista. Sirve para mostrar las paradas cercanas, tu posición en el mapa, salir «desde aquí» en Rutas, saber desde dónde vuelves a casa y ordenar los accesos de una estación. Puedes negarlo: la app funciona eligiendo las paradas a mano.</p>
+
+<h2>Notificaciones</h2>
+<p>Los avisos de «Tus rutas» (cuándo salir, la noche antes, si vas a llegar tarde y avisos en el camino), los de huelgas y obras en tus líneas, «Avísame al bajar», «Avísame para volver», las citas del calendario y la caducidad del abono se generan en el móvil. No hay servicio de notificaciones externo. Puedes desactivarlos en la app o en los ajustes de Android. Para que suenen a su hora, se usan alarmas del sistema y un arranque tras reiniciar el móvil.</p>
+
+<h2>Tarjeta de transporte (NFC)</h2>
+<p>La pantalla Tarjeta lee por NFC, sin claves y solo en modo lectura, los datos técnicos de la tarjeta que acerques, como su identificador. Se muestran en pantalla y no se guardan ni se envían. Solo salen de ahí si pulsas «Copiar informe», que los deja en el portapapeles.</p>
+
+<h2>Copias en tu cuenta de Google</h2>
+<h3>Copia automática de Android</h3>
+<p>Si la tienes activada en el móvil, Android guarda en tu cuenta de Google las preferencias de la app y las pasa a un móvil nuevo: todo lo de «Qué se guarda en tu móvil» menos el correo, el código de instalación, la ciudad, la última zona vista en el mapa, las búsquedas de las últimas cuatro semanas, el punto de «Avísame para volver», qué calendarios se miran, los horarios y la previsión. Se gestiona en los ajustes de Android.</p>
+<h3>Continuar con Google</h3>
+<p>Es opcional. Si lo activas, la app pide a Google tu correo y permiso para usar su carpeta privada de Google Drive, que no da acceso al resto de tu Drive. Ahí guarda un archivo con favoritos, Casa, Trabajo y tus sitios, «Tus rutas», la zona del abono, evitar estaciones sin ascensor y el tema, y lo sincroniza al abrir y al dejar la app.</p>
+<p>Ese archivo y el correo no llegan al responsable de la app. Los datos de Google se usan solo para esta sincronización, no se venden y no se usan para publicidad. El uso que hace la app de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+<p>Al cerrar sesión se retira el permiso, pero el archivo sigue en Drive y tus datos siguen en el móvil. Para borrar el archivo, usa «Borrar mis datos de Drive» en Más › Ajustes › Cuenta y copia, o elimina los datos ocultos de la app desde los ajustes de Google Drive.</p>
+
+<h2>Tus derechos</h2>
+<p>Puedes pedir acceso, rectificación, supresión, oposición o limitación escribiendo a <a href="mailto:ruizardev@gmail.com">ruizardev@gmail.com</a>. Ten en cuenta que el servidor solo guarda un código al azar que no dice quién eres: para encontrar tus datos necesitaríamos ese código, y en todo caso se borran solos a los dos minutos. Reinstalar la app crea un código nuevo.</p>
+<p>Puedes borrar lo que hay en el móvil desinstalando la app o limpiando sus datos, y lo que hay en Google con «Borrar mis datos de Drive» o desde tu cuenta. Para lo que reciben otros servicios, debes dirigirte a ellos. También puedes reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+
+<h2>Menores</h2>
+<p>La app no está dirigida a menores de 14 años y no les pide ningún dato.</p>
+
+<h2>Estadísticas de uso anónimas</h2>
+<p>Para saber qué partes de la app se usan y cuáles sobran, la app cuenta en tu móvil cuántas veces haces algunas cosas y, como mucho una vez al día, manda al servidor de la app solo esos números y la versión de la app. Se apagan en Ajustes › Estadísticas anónimas; apagadas, ni se cuenta y lo contado se borra.</p>
+<ul>
+<li><strong>Qué se cuenta:</strong> abrir la app, abrir una parada, una línea, el mapa o Avisos, buscar una ruta, guardar una en Tus rutas, añadir un favorito, usar «Avísame al bajar» o «Avísame para volver», leer la tarjeta, abrir desde el widget, recibir un aviso de una ruta, de una cita o de tus líneas y abrir el de una ruta, hacer la copia en Drive, y usar la app en inglés.</li>
+<li><strong>Qué no se manda:</strong> el código de instalación (esta petición va sin él), qué parada, línea o ruta, a qué hora, ni dónde estás. El servidor suma lo de todos por día y versión: no guarda envíos sueltos.</li>
+<li><strong>Dónde se guarda:</strong> lo contado y aún sin mandar, solo en el móvil (no va a la copia de Android ni a Drive). En el servidor, los totales por día.</li>
+</ul>
+
+<h2>Anuncios</h2>
+<p>Esta versión de la app no muestra anuncios. Si eso cambia, se contará aquí antes, con cómo se pide y se retira el consentimiento.</p>
+
+<h2>Cambios</h2>
+<p>Si cambia algo de lo que aquí se cuenta, se actualizará esta página y su fecha.</p>
+
+<footer>Tepé es una app independiente, no oficial. · <a href="condiciones.html">Condiciones</a> · <a href="soporte.html">Soporte</a></footer>
+</main>
+</body>
+</html>
